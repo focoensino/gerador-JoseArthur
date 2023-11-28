@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+
+    <title>SPG</title>
+</head>
+<body>
+
+<main>
+<section class="topo" >
+
+  <h1 class="titulo">SPG - Strong Password Generator </h1> 
+  <P class="sub-titulo">Use Our Strong Password Generator!</P>
+
+</section>
+
+
+<section class="box">
+
+  <div class="password">
+
+
+    <div class="text">
+            <input type="text"name="password"id="password">
+    </div>
+    <div class="action">
+      <button id="copy-2"><img src="./COPY.SVG"></button>
+      <button id="realod"><img src="./relouadì.svg"></button>
+    </div>
+
+
+  </div>
+
+  <div class="security-indicator">
+
+    <div class="bar safe completed"   id="security-indicator-bar"  style="width: 100%;"></div>
+
+  </div>
+
+</section>
+
+
+<section class="box customize">
+<h3 class="title">Personalize</h3>
+<div class="actions">
+    <div class="password-length">
+      <p>Size: <span id="password-length-text">16</span></p>
+      <input type="range" class="slider" name="password-length"id= "password-length"value="16" min="4"max="64">
+
+    </div>
+
+   <div class="config">
+   <label class="chackbox-container">
+    <span class="text">Capital</span>
+    <input type="checkbox" id="uppercase-check" checked>
+    <span class="checkmark"></span>
+   </label>
+   <label class="chackbox-container">
+    <span class="text">Numbers</span>
+    <input type="checkbox" id="number-check" checked>
+    <span class="checkmark"></span>
+   </label>
+   <label class="chackbox-container">
+    <span class="text">Symbols</span>
+    <input type="checkbox" id="simbol-check" checked>
+    <span class="checkmark"></span>
+   </label>
+
+   </div>
+
+
+
+
+</div>
+</section>
+
+  
+
+
+  <button id="Copy">Copy</button>
+  </main>
+
+
+<script src="./scritp.js"></script>
+
+
+</body>
+</html>
